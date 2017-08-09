@@ -24,7 +24,7 @@ header{
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     padding-bottom: 3%;
 }
 .logo h1{
@@ -58,12 +58,14 @@ header{
   ========================================
 */
 .myjumbotron{
-    height: 500px;
+    height: 600px;
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     color: white;
+    border-bottom: 1rem solid rgba(47,28,20,0.8); 
 }
 .bytag h2{
     font-family: 'Indie Flower',cursive;
@@ -82,11 +84,15 @@ header{
 .h-portfolio{
     padding-top: 2%;
     padding-bottom: 10%;
-    
+    background-image: url('../img/portfolioback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    border-bottom: 1rem solid rgba(0,0,0,0.7);
 }
 .p-btn{
     border-bottom: 3px solid;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .portf-item{
     margin-top: 10%;
@@ -107,11 +113,62 @@ header{
 }
 /*
   ========================================
+  Footer
+  ========================================
+*/
+footer{
+    background-image: url('../img/footerback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+    height: 300px;
+    padding-top: 2%;
+    
+}
+.f-social h4{
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    text-indent: 20px;
+}
+figure{
+    display: inline-block;
+}
+.f-social img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+.f-nav h4{
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+.f-nav{
+    list-style: none;
+    font-size: 1.7rem;
+}
+.f-nav a{
+    color: white;
+    opacity: 0.5;
+}
+.f-nav a:hover{
+    border-bottom:3px solid rgba(81,136,145,1); 
+}
+.f-copy{
+    color: white;
+    font-size: 2rem;
+}
+
+/*
+  ========================================
   Media
   ========================================
 */
 @media screen and (max-width: 1024px){
-
+    
 }
 @media screen and (max-width: 768px){
 
