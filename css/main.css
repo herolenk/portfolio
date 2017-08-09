@@ -83,7 +83,7 @@ header{
 */
 .h-portfolio{
     padding-top: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     background-image: url('../img/portfolioback.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,28 +93,19 @@ header{
 .p-btn{
     border-bottom: 3px solid;
     font-size: 1.6rem;
+    margin-bottom: 10%;
 }
 .p-btn:hover,
 .p-btn:active{
     color: white;
 }
 .portf-item{
-    margin-top: 10%;
-    margin-left: 2%;
+    margin-top: 20%;
     height:300px;
     width: 50px;
-
-}
-.portf-item img{
-    border: 3px solid rgba(0,0,0,0.7);
-}
-.portf-show{
-    margin-top: 5%;
-    text-align: center;
 }
 .p-item{
     border: 5px solid rgba(0,0,0,0.8);
-    margin-left: 5px;
 }
 #item1{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
 #item2{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
@@ -126,7 +117,7 @@ header{
   Portfolio Animation
   ========================================
 */
-.sportfolioitem{
+.sPortfolioItem{
     animation-name: portfolyoThrow;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -135,7 +126,7 @@ header{
 }
 @keyframes portfolyoThrow {
     from {background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;left:0;bottom:0;}
-    to   {background-image: url('http://via.placeholder.com/400x600/DEDDC9/8E8F90');width: 400px;height: 600px;left:1000px;bottom: 150px;}
+    to   {background-image: url('http://via.placeholder.com/700x600/DEDDC9/8E8F90');width: 500px;height: 600px;left:500px;bottom: 150px;}
 }
 /*
   ========================================
