@@ -74,13 +74,48 @@ header{
     margin-bottom: 8%;
     opacity: 0.5;
 }
-.bytag p{
-    font-family: cursive;
-    font-size: 1.2rem;
-    opacity: 0.5;
+/*
+  ========================================
+  Portfolio
+  ========================================
+*/
+.h-portfolio{
+    padding-top: 2%;
+    padding-bottom: 10%;
+    
+}
+.p-btn{
+    border-bottom: 3px solid;
+    font-size: 1.5rem;
+}
+.portf-item{
+    margin-top: 10%;
+    margin-left: 2%;
+    height:300px;
+    width: 20px;
+
+}
+.portf-item img{
+    border: 3px solid rgba(0,0,0,0.7);
+}
+.portf-show{
+    margin-top: 5%;
+    text-align: center;
+}
+.portf-show img{
+    border: 5px solid rgba(0,0,0,0.8);
 }
 /*
   ========================================
   Media
   ========================================
 */
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+
+}
