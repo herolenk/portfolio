@@ -1,0 +1,26 @@
+/*
+  ========================================
+  General
+  ========================================
+*/
+html,body{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 14px;
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.logo h1{
+    font-family: Lobster, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 4.2rem;
+    line-height: 5.5rem;
+    text-align: center;
+}
