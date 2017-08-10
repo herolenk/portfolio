@@ -22,7 +22,7 @@ header{
     background-image:url('../img/headerback.jpg');
     background-repeat:no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     padding-top: 2%;
     padding-bottom: 5%;
 }
@@ -84,11 +84,38 @@ header{
 }
 /*
   ========================================
+  HomeButtons
+  ========================================
+*/
+.homebtn{
+    border-bottom: 3px solid;
+    background-color: rgba(81,136,145,0.5);
+    padding:10px 30px 10px 30px;
+    border-radius: 2px;
+    font-size: 2.5rem;
+    display:inline-block;
+    color: rgba(255,255,255,0.4)
+}
+.hom-portf-btn{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding:10px;
+    text-align: center;
+}
+.h-blog-btn{
+    margin-top: 2%;
+}
+.h-about-btn{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*
+  ========================================
   Blog
   ========================================
 */
 .h-blog{
-    height: 1000px;
+    height: 800px;
     background-image: url('../img/homeblog.jpg');
     background-size:cover;
     background-position: center;
@@ -112,16 +139,16 @@ header{
 .h-about h2{
     text-align: center;
     font-size: 7rem;
-    padding-bottom: 300px;
-    padding-top: 100px;
-    color: rgba(255,255,255,0.8);
+    padding-bottom: 200px;
+    padding-top: 200px;
+    color: rgba(74,160,125,0.6);
 }
 .h-about{
-    height: 1500px;
+    height: 1700px;
     border-bottom: 1rem solid rgba(0,0,0,0.5);
     background-image: url('../img/homeaboutback.jpg');
     background-size:cover;
-    background-position:right center;
+    background-position:bottom left;
     background-repeat:no-repeat;
 }
 .h-a-m img{
@@ -140,6 +167,9 @@ header{
   Portfolio
   ========================================
 */
+.h-portf-cont{
+    width: 50%;
+}
 #home-portfolio{
     background-image: url('../img/homportfback.jpg');
     background-size: cover;
@@ -151,9 +181,9 @@ header{
     border-bottom: 1rem solid rgba(11,8,3,0.4);
 }
 #home-portfolio h2{
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
-    color: rgba(255,255,255,0.8)
+    color: rgba(0,0,0,0.8)
 }
 .h-portfolio{
     padding-top: 2%;
@@ -258,6 +288,38 @@ figure{
   Media
   ========================================
 */
+@media screen and (max-width: 1700px){
+    .h-about{
+    height: 1700px;
+    background-position:bottom center;
+    }
+}
 @media screen and (max-width: 1024px){
+    .h-blog{
+    height: 800px;
+    background-position: center center;
+    }
+}
+@media screen and (max-width: 700px){
+    .h-a-m p{
+    color: rgba(98,120,74,0.8);
+    font-weight: bold;
+}
+}
+@media screen and (max-width: 450px){
+    .homebtn{
+    background-color: rgba(81,136,145,0.5);
+    padding:10px 30px 10px 30px;
+    font-size: 2rem;
+    }
+    #home-portfolio h2{
+    font-size: 3rem;
     
+    }
+    .h-blog{
+    background-position: center center;
+    }
+    .bho{
+    margin-top: 50%;
+    }
 }
