@@ -1,0 +1,52 @@
+*{
+    box-sizing:border-box;
+}
+html,body{
+    padding:0;
+    margin:0;
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header{
+    height: 700px;
+    width: auto;
+    background-image: url('https://image.ibb.co/gRr0sF/wrapper.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+}
+header img{
+    height:auto;
+    max-width: 40%;
+    margin:0 auto;
+}
+/*
+  ========================================
+  Media
+  ========================================
+*/
+}
+@media only screen and (max-width:1024){
+ header img{   
+    max-width: 100%;
+    display:block;
+    }
+}
+@media only screen and (max-width:720){
+ header img{   
+    max-width: 100%;
+    display:block;
+    }
+}
+@media only screen and (max-width:480){
+
+ header img{   
+    max-width: 100%;
+    display:block;
+    }
+    
+}

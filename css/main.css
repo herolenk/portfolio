@@ -26,6 +26,13 @@ header{
     padding-top: 2%;
     padding-bottom: 5%;
 }
+.logo a:hover{
+    text-decoration: none;
+    
+}
+.logo h1:hover{
+    font-size:4.5rem;
+}
 .logo h1{
     font-family: Lobster, sans-serif;
     text-transform: uppercase;
@@ -34,6 +41,7 @@ header{
     line-height: 5.5rem;
     text-align: center;
     opacity: 1;
+    color: rgba(255, 27, 27, 0.9);
 }
 .menu{
     text-align: center;
@@ -159,7 +167,7 @@ header{
 .h-a-m p{
     font-size: 3rem;
     text-align: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.5);
     padding-top: 9%;
 }
 /*
@@ -167,14 +175,104 @@ header{
   About Page Begin
   =======================================================================================================================
 */
+.aboutmecontent h1{
+    color: rgba(255,255,255,0.7);
+    font-size: 7rem;
+    margin-top: 8%;
+    border: 5px solid rgba(255,255,170,0.7);
+    padding: 10px;
+    border-radius: 10px 0;
+    text-align: center;
+    
+    
+}
+
+.aboutpage{
+    border-top: 1rem solid rgba(202,158,95,0.7);
+    border-bottom: 1rem solid rgba(202,158,95,0.7);
+    background-image: url('../img/aboutpageback.jpg');
+    height: auto;
+    padding-bottom: 5%;
+    color: rgba(255,255,255,0.7);
+}
+.aboutmecopy{
+    background-color:rgba(0,0,255,0.6);
+    border-radius: 1% 15%;
+    text-align: center;
+    border: 5px solid rgba(255,255,255,0.7);
+    padding: 5% 7% 5% 7%;
+}
+.aboutmecopy h2{
+    text-transform:capitalize;
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+.aboutmecopy p{
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+}
+
+.aboutme{
+    width:70%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.aboutmeImages{
+    width: 100%;
+    text-align: center;
+    margin-top:5%;
+}
+.img{
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 15% 10%;
+}
+#img0{
+    width: 700px;
+    height: 900px;
+    background-image: url('../img/me.jpg');
+    margin-bottom: 50px;
+    
+}
+#img1{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/me1.jpg');
+    margin-left: 1%;
+}
+#img2{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/me2.jpg');
+    margin-left: 3%;
+}
+#img3{
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/me3.jpg');
+    margin-left: 3%;
+}
 
 
-
-
-
-
-
-
+/*
+  ========================================
+  Media
+  ========================================
+*/
+@media screen and (max-width: 934px){
+    
+    .aboutmeImages{
+        width: 100%;
+    }
+    #img0{
+        width: 100%;
+        height: 500px;
+    }
+    
+}
 
 /*
   =======================================================================================================================
@@ -207,50 +305,98 @@ header{
 }
 .h-portfolio{
     padding-top: 2%;
-    padding-bottom: 20%;
-    background-image: url('../img/portfolioback.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
+    padding-bottom: 10%;
+    background: #16222A;
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    background: linear-gradient(to right, #3A6073, #16222A);
     border-bottom: 1rem solid rgba(0,0,0,0.7);
 }
 .p-btn{
     border-bottom: 3px solid;
     font-size: 1.6rem;
+    margin-left: 10%;
     margin-bottom: 10%;
+    color: rgba(255,255,255,0.7);
+    font-weight: 700;
+    letter-spacing: 5px;
 }
 .p-btn:hover,
 .p-btn:active{
     color: white;
 }
+
 .portf-item{
-    margin-top: 20%;
-    height:300px;
-    width: 50px;
+    width: 100%;
+    text-align: center;
 }
+
 .p-item{
-    border: 5px solid rgba(0,0,0,0.8);
+    border: 10px solid rgba(0,0,0,0.9);
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    margin: 3%;
+    cursor:url(../img/zoom-in.png),zoom-in;
 }
-#item1{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
-#item2{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
-#item3{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
-#item4{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
-#item5{background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;}
+.portLink{
+    display: hide;
+}
+
+.item1{
+    background-image: url('../img/portfolioitem1.png');
+}
+.item2{
+    background-image: url('../img/portfolioitem2.png');
+}
+.item3{
+    background-image: url('../img/portfolioitem5.png');
+}
+.item4{
+    background-image: url('../img/portfolioitem4.png');
+}
+.item5{
+    background-image: url('../img/portfolioitem3.png');
+}
+
+.allItems{};
+.htmlCss{};
+.javascript{};
+.jquery{};
 /*
   ========================================
   Portfolio Animation
   ========================================
 */
-.sPortfolioItem{
-    animation-name: portfolyoThrow;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+
+.b-i-newWindow{
     position: relative;
+    left: 30px;
 }
-@keyframes portfolyoThrow {
-    from {background-image: url('http://via.placeholder.com/250x360/DEDDC9/8E8F90');width: 250px;height: 360px;left:0;bottom:0;}
-    to   {background-image: url('http://via.placeholder.com/700x600/DEDDC9/8E8F90');width: 500px;height: 600px;left:500px;bottom: 150px;}
+.b-i-remWindow{
+    display:inline-block;
+    margin-top: -28px;
+    margin-right:-10px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.bigItem{
+    width: 80%;
+    height: 80%;
+    z-index: 100;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../img/portfolioitem1.png');
+    display: hidden;
+    border: 10px solid rgb(0,0,0);
+    border-radius: 5px;
 }
 /*
   ========================================
@@ -303,6 +449,12 @@ figure{
     font-size: 2rem;
 }
 
+
+
+
+#showbig{
+    display: none;
+}
 /*
   ========================================
   Media
@@ -319,6 +471,9 @@ figure{
     height: 800px;
     background-position: center center;
     }
+    .h-portf-btns{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 700px){
     .h-a-m p{
@@ -328,18 +483,24 @@ figure{
 }
 @media screen and (max-width: 450px){
     .homebtn{
-    background-color: rgba(81,136,145,0.5);
-    padding:10px 30px 10px 30px;
-    font-size: 2rem;
+        background-color: rgba(81,136,145,0.5);
+        padding:10px 30px 10px 30px;
+        font-size: 2rem;
     }
     #home-portfolio h2{
-    font-size: 3rem;
-    
+        font-size: 3rem;
     }
     .h-blog{
-    background-position: center center;
+        background-position: center center;
     }
     .bho{
-    margin-top: 50%;
+        margin-top: 50%;
+    }
+    .p-item{
+        width: 80%;
+        height: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+    
     }
 }
