@@ -448,8 +448,20 @@ figure{
     color: white;
     font-size: 2rem;
 }
-
-
+.footerSec{
+    width: 33%;
+    display:inline-block;
+    text-align: center;
+}
+.footerLeft{
+    float: left;
+}
+.footerCenter{
+    text-align: center;
+}
+.footerRight{
+    float: right;
+}
 
 
 #showbig{
