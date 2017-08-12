@@ -1,15 +1,38 @@
 var main = function(){
-   var currentLink;
+    var currentLink;
     
+/* Big Item Settings*/    
+    
+    var currentItem;
     $('.p-item').on('click',function(){
         
         var currentBackground = $(this).css('background-image');
         currentLink = $(this).next('.portLink').attr('href');
+        currentItem = $(this).attr('id');
         $('.bigItem').css('background-image', currentBackground);
         $('#showbig').show();
         
-        
     });
+    
+    switch(currentItem){
+        case 'portfItem1':
+            //do somethings;
+            break;
+        case 'portfItem2':
+            //do somethings;
+            break;
+        case 'portfItem3':
+            //do somethings;
+            break;
+        case 'portfItem4':
+            //do somethings;
+            break;
+        case 'portfItem5':
+            //do somethings;
+            break;   
+    }
+    
+    
     $('.newWindow').on('click',function(){
         
         $('.newWindow').attr('href', currentLink);
