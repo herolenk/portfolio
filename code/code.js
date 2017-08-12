@@ -1,36 +1,68 @@
+var showBigItemMiniImgs = function(){
+        $('#bigItemP1').show();
+        $('#bigItemP2').show();
+        $('#bigItemP3').show();
+    }
+
 var main = function(){
     var currentLink;
     
 /* Big Item Settings*/    
-    
     var currentItem;
+    var currentBackground;
     $('.p-item').on('click',function(){
         
-        var currentBackground = $(this).css('background-image');
+        currentBackground = $(this).css('background-image');
         currentLink = $(this).next('.portLink').attr('href');
         currentItem = $(this).attr('id');
         $('.bigItem').css('background-image', currentBackground);
         $('#showbig').show();
-        
-    });
-    
     switch(currentItem){
         case 'portfItem1':
-            //do somethings;
+            showBigItemMiniImgs();
+            $('#bigItemP1').css('background-image',"url(../img/portfolyoBigItem/Item1/portfolyoItem1Picture1.png)");
+            $('#bigItemP2').css('background-image',"url(../img/portfolyoBigItem/Item1/portfolyoItem1Picture2.png)");
+            $('#bigItemP3').css('background-image',"url(../img/portfolyoBigItem/Item1/portfolyoItem1Picture3.png)");
             break;
         case 'portfItem2':
-            //do somethings;
+            showBigItemMiniImgs();
+            $('#bigItemP1').css('background-image',"url(../img/portfolyoBigItem/Item2/portfolyoItem2Picture1.png)");
+            $('#bigItemP2').hide();
+            $('#bigItemP3').hide();
             break;
         case 'portfItem3':
-            //do somethings;
+            showBigItemMiniImgs();
+            $('#bigItemP1').css('background-image',"url(../img/portfolyoBigItem/Item3/portfolyoItem3Picture1.png)");
+            $('#bigItemP2').css('background-image',"url(../img/portfolyoBigItem/Item3/portfolyoItem3Picture2.png)");
+            $('#bigItemP3').css('background-image',"url(../img/portfolyoBigItem/Item3/portfolyoItem3Picture3.png)");
             break;
         case 'portfItem4':
-            //do somethings;
+            showBigItemMiniImgs();
+            $('#bigItemP1').css('background-image',"url(../img/portfolyoBigItem/Item4/portfolyoItem4Picture1.png)");
+            $('#bigItemP2').css('background-image',"url(../img/portfolyoBigItem/Item4/portfolyoItem4Picture2.png)");
+            $('#bigItemP3').css('background-image',"url(../img/portfolyoBigItem/Item4/portfolyoItem4Picture3.png)");
             break;
         case 'portfItem5':
-            //do somethings;
+            showBigItemMiniImgs();
+            $('#bigItemP1').css('background-image',"url(../img/portfolyoBigItem/Item5/portfolyoItem5Picture1.png)");
+            $('#bigItemP2').hide();
+            $('#bigItemP3').hide();
             break;   
     }
+    });
+     $('#bigItemP1').on('click',function(){
+        var myBackground = $('#bigItemP1').css('background-image');
+        $('.bigItem').css('background-image', myBackground);
+    });   
+    $('#bigItemP2').on('click',function(){
+        var myBackground = $('#bigItemP2').css('background-image');
+        $('.bigItem').css('background-image', myBackground);
+    }); 
+    $('#bigItemP3').on('click',function(){
+        var myBackground = $('#bigItemP3').css('background-image');
+        $('.bigItem').css('background-image', myBackground);
+    }); 
+    
     
     
     $('.newWindow').on('click',function(){
@@ -40,7 +72,6 @@ var main = function(){
     });
     $('.b-i-remWindow').on('click',function(){
         
-        $('body').css('opacity', '1');
         $('#showbig').hide();
         
     });

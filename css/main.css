@@ -13,6 +13,7 @@ html{
 body{
     font-family: 'Indie Flower',cursive;
 }
+
 /*
   ========================================
   Header
@@ -229,6 +230,7 @@ header{
     background-repeat:no-repeat;
     background-size:cover;
     border-radius: 15% 10%;
+    border: 10px solid rgba(131,133,245,1);
 }
 #img0{
     width: 700px;
@@ -375,10 +377,35 @@ header{
 }
 .b-i-remWindow{
     display:inline-block;
-    margin-top: -28px;
-    margin-right:-10px;
     padding-right: 40px;
     cursor: pointer;
+}
+.b-i-remWindow img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.bigItemOterPictures{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.BigItemPicture{
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.7);
+    margin-bottom: 5px;
+    border: 5px solid rgba(72,130,26,0.9);
+    display:inline-block;
+    float: left;
+    margin-left: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+    cursor:url(../img/zoom-in.png),zoom-in;
 }
 .bigItem{
     width: 80%;
@@ -391,26 +418,11 @@ header{
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url('../img/portfolioitem1.png');
-    display: hidden;
     border: 10px solid rgb(0,0,0);
     border-radius: 5px;
+    background-color: rgba(0,0,0,1);
 }
-.bigItemOterPictures{
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-}
-.BigItemPicture{
-    width: 100px;
-    height: 100px;
-    background: rgba(255,255,255,0.7);
-    margin-bottom: 5px;
-    border: 5px solid rgba(0,0,0,0.7);
-    display:inline-block;
-    float: left;
-    margin-left: 5px;
-    
-}
+
 /*
   ========================================
   Footer
@@ -477,11 +489,9 @@ figure{
 }
 
 
-/*
 #showbig{
     display: none;
 }
-*/
 /*
   ========================================
   Media
