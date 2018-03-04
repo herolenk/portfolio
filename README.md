@@ -1,6 +1,6 @@
 ### Project Overview
 
-- [See Project on github page](https://herolenk.github.io/portfolio/)
+- [See Project on github page](https://katipoglumustafa.github.io/portfolio/)
 
 ### Details
 This project is from
